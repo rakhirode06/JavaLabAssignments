@@ -1,4 +1,11 @@
+class SY2022BIT006{
+public static void main(String[] args)
 {
+	String []enrollment = {null,"2022Bit006","1999bit501","2025bcs001"};
+	SY2022bit006 data = new SY2022bit006();
+	int count  =data.getValidRegistrationsCount(enrollment);
+	System.out.println(count);
+}
 public int getValidRegistrationsCount(String []enroll)
 {
 	int count =0;
@@ -58,11 +65,5 @@ public int getValidRegistrationsCount(String []enroll)
 	}	
 	return count;
 }
-public static void main(String[] args)
-{
-	String []enrollment = {null,"2022Bit006","1999bit501","2025bcs001"};
-	SY2022bit006 data = new SY2022bit006();
-	int count  =data.getValidRegistrationsCount(enrollment);
-	System.out.println(count);
-}
+
 }
